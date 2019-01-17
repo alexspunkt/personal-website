@@ -1,11 +1,94 @@
-.bg-dark {
-  background: $dark;
+.button-orange {
+  font-size: 18px;
+  font-family: "Thasadith", sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  min-height: 30px;
+  display: inline-block;
+  padding: 3px;
+  margin: 3px;
+  background: darkorange;
+  color: white;
+  box-shadow: 2px 4px 8px darkgrey;
+  border-radius: 3px;
 }
 
-.text-light {
-  color: $light;
+.button-inlay {
+  display: inline-block;
+  padding: 3px;
+  margin: 2px;
+  color: black;
+  background: white;
+  border-radius: 3px;
 }
 
-.p-20 {
-  padding: 20px;
+.effect8 {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect8:before,
+.effect8:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+.effect8:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+.shadow-hover:hover {
+  box-shadow: 3px 5px 40px darkgrey;
+  transition: box-shadow 0.6s ease;
+}
+
+.sub-head {
+  font-family: "Open Sans", sans-serif;
+  margin: 10px 0px;
+  display: block;
+  font-weight: normal;
+  font-size: 17px;
+  color: black;
+}
+
+.info__last {
+  font-size: 12px;
+}
+
+.test-vertical-bubbles {
+  margin-left: 10px;
+  border-left: 1px solid black;
+}
+
+.test-vertical-bubbles-2::before {
+  display: block;
+  list-style-type: disc;
+  padding: 0;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: -75px;
+  margin-right: 0;
+}
+
+.li-test {
+  margin: 0;
+  padding: 0;
 }

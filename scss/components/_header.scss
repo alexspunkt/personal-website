@@ -1,5 +1,48 @@
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header__header {
+  display: grid;
+  padding: 10px;
+  width: 100%;
+  grid-template-columns: auto auto 1px auto auto;
+  margin: 0 auto;
+}
+
+.header__name {
+  display: inline-block;
+  border-bottom: 1px solid grey;
+}
+.header__div {
+  grid-column: span 2;
+  padding: 15px;
+  margin: auto;
+}
+
+.border__helper {
+  border-right: 1px solid grey;
+  height: 80%;
+  margin: auto 0;
+}
+.header__img {
+  max-width: 250px;
+  filter: grayscale(100%);
+}
+
+/*
+.header__img:hover {
+  transform: none;
+  filter: none;
+}
+*/
+
+.header__p {
+  font-family: "Open Sans", sans-serif;
+  margin: 10px 0px;
+  display: block;
+  font-weight: normal;
+  font-size: 17px;
+  color: black;
+  line-height: 30px;
+}
+
+.header__span {
+  font-family: "Thasadith", sans-serif;
 }

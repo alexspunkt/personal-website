@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alexander Schöpe, M.Sc.</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Thasadith"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Team App</title>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
-
-<body class="grid">
-  <%- include('components/header') %>
-  <%- include('components/home') %>
-  <%- include('components/footer') %>
-</body>
-
+  <body>
+    <div class="wrapper">
+      <%- include('components/header') %> <%- include('components/home') %> <%-
+      include('components/footer') %>
+    </div>
+  </body>
 </html>
