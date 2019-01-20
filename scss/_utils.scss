@@ -3,19 +3,22 @@
   font-family: "Thasadith", sans-serif;
   letter-spacing: 1px;
   font-weight: bold;
-  min-height: 30px;
   display: inline-block;
-  padding: 3px;
-  margin: 3px;
-  background: darkorange;
+  padding: 5px 10px;
+  margin: 5px;
+  background: #636363;
   color: white;
   box-shadow: 2px 4px 8px darkgrey;
   border-radius: 3px;
 }
 
 .button-inlay {
+  font-size: 18px;
+  font-family: "Thasadith", sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
   display: inline-block;
-  padding: 3px;
+  padding: 1px 6px;
   margin: 2px;
   color: black;
   background: white;
@@ -73,23 +76,23 @@
   font-size: 12px;
 }
 
-.test-vertical-bubbles {
-  margin-left: 10px;
+.bubble__container {
+  padding-left: 30px;
   border-left: 1px solid black;
+  font-size: 15px;
 }
 
-.test-vertical-bubbles-2::before {
-  display: block;
-  content: " ";
-  list-style-type: disc;
-  padding: 0;
-  margin-top: 1em;
-  margin-bottom: 1 em;
-  margin-left: -75px;
-  margin-right: 0;
+.bubble__container__before::before {
+  content: "";
+  display: inline-block;
+  background-color: black;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  margin-left: -36px;
+  margin-right: 25px;
 }
 
-.li-test {
-  margin: 0;
-  padding: 0;
+.contact__span {
+  margin: 0px 0px 0px 15px;
 }

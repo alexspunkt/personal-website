@@ -91,8 +91,6 @@
 @media screen and (max-width: 600px) {
   .header__div {
     grid-column: span 5;
-    xxpadding: 100px;
-    xxmargin: auto;
     max-width: 100%;
   }
   .header__img__helper {
@@ -100,7 +98,7 @@
     margin: -200px auto 20px auto;
     color: white;
     background: grey;
-    opacity: 0.9;
+    opacity: 0.85;
   }
   .header__txt__helper {
     color: white;
@@ -131,4 +129,23 @@
     margin: 10px;
     padding: 15px;
   }
+}
+
+.contact__grid {
+  display: grid;
+  width: 100%;
+  grid-template-rows: auto auto auto;
+  justify-items: stretch;
+  margin: 30px auto;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.contact__row {
+  grid-row: span 1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }

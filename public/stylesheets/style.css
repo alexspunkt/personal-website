@@ -3,18 +3,21 @@
   font-family: "Thasadith", sans-serif;
   letter-spacing: 1px;
   font-weight: bold;
-  min-height: 30px;
   display: inline-block;
-  padding: 3px;
-  margin: 3px;
-  background: darkorange;
+  padding: 5px 10px;
+  margin: 5px;
+  background: #636363;
   color: white;
   box-shadow: 2px 4px 8px darkgrey;
   border-radius: 3px; }
 
 .button-inlay {
+  font-size: 18px;
+  font-family: "Thasadith", sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
   display: inline-block;
-  padding: 3px;
+  padding: 1px 6px;
   margin: 2px;
   color: black;
   background: white;
@@ -65,23 +68,23 @@
 .info__last {
   font-size: 12px; }
 
-.test-vertical-bubbles {
-  margin-left: 10px;
-  border-left: 1px solid black; }
+.bubble__container {
+  padding-left: 30px;
+  border-left: 1px solid black;
+  font-size: 15px; }
 
-.test-vertical-bubbles-2::before {
-  display: block;
-  content: " ";
-  list-style-type: disc;
-  padding: 0;
-  margin-top: 1em;
-  margin-bottom: 1 em;
-  margin-left: -75px;
-  margin-right: 0; }
+.bubble__container__before::before {
+  content: "";
+  display: inline-block;
+  background-color: black;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  margin-left: -36px;
+  margin-right: 25px; }
 
-.li-test {
-  margin: 0;
-  padding: 0; }
+.contact__span {
+  margin: 0px 0px 0px 15px; }
 
 * {
   box-sizing: border-box; }
@@ -181,15 +184,13 @@ body {
 @media screen and (max-width: 600px) {
   .header__div {
     grid-column: span 5;
-    xxpadding: 100px;
-    xxmargin: auto;
     max-width: 100%; }
   .header__img__helper {
     position: relative;
     margin: -200px auto 20px auto;
     color: white;
     background: grey;
-    opacity: 0.9; }
+    opacity: 0.85; }
   .header__txt__helper {
     color: white;
     margin: 0px;
@@ -214,5 +215,21 @@ body {
     width: 90%;
     margin: 10px;
     padding: 15px; } }
+
+.contact__grid {
+  display: grid;
+  width: 100%;
+  grid-template-rows: auto auto auto;
+  justify-items: stretch;
+  margin: 30px auto;
+  grid-gap: 10px;
+  align-items: center; }
+
+.contact__row {
+  grid-row: span 1; }
+
+a {
+  text-decoration: none;
+  color: black; }
 
 /*# sourceMappingURL=style.css.map */
