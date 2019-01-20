@@ -55,7 +55,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 100%;
-  max-height: 1000px;
+  max-height: 1100px;
 }
 
 .section__general {
@@ -91,11 +91,15 @@
 @media screen and (max-width: 600px) {
   .header__div {
     grid-column: span 5;
+    padding: 0px;
     max-width: 100%;
+  }
+  .padding__helper {
+    padding: 10px;
   }
   .header__img__helper {
     position: relative;
-    margin: -200px auto 20px auto;
+    margin: -180px auto 20px auto;
     color: white;
     background: grey;
     opacity: 0.85;
